@@ -4,7 +4,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', [
+angular.module('mediappjmp', [
   'ionic',
   'ngAnimate',
   'ngCookies',
@@ -34,29 +34,6 @@ angular.module('starter', [
       })
       .when('/about', {
         templateUrl: 'views/main.html',
-        controller: 'AboutCtrl'
-      })
-  })
-
-'use strict';
-
-/**
- * @ngdoc overview
- * @name mytodoApp
- * @description
- * # mytodoApp
- *
- * Main module of the application.
- */
-
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
