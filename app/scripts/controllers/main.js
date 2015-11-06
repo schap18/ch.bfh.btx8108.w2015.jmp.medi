@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('mediappjmp')
+angular.module('starter')
   .controller('MainCtrl', function($scope) {
     $scope.todos = ['Plavix Tbl 75mg', 'IBU Sandoz Tbl 400mg', 'Panprax Tbl 20mg', 'weiteres Medi'];
     $scope.addTodo = function () {

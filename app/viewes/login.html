@@ -1,0 +1,39 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+  </ion-header-bar>
+
+  <ion-view view-title="Login" name="login-view">
+    <ion-content class="padding">
+      <div class="list list-inset">
+
+        <div class="img">
+          <img src="images/broennimann.png" alt="HTML5 Icon" width="280" height="200">
+          <style>
+
+            div.img {
+              margin: 5px;
+              padding: 5px;
+              height: auto;
+              width: auto;
+              text-align: center;
+            }
+            </style>
+
+        </div>
+
+        <label class="item item-input">
+          <input type="text" placeholder="E-Mail" ng-model="data.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Passwort" ng-model="data.password">
+        </label>
+      </div>
+      <button class="button button-block button-calm" ng-click="login()">Login</button>
+
+      <div class="buttons">
+        <button class="button button-clear" ng-controller="PopupCtrl" ng-click="showAlert()">Passwort vergessen</button>
+      </div>
+    </ion-content>
+  </ion-view>
+</ion-modal-view>
